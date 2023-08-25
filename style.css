@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: rgb(48, 55, 76);
+    background-color: rgb(26, 39, 80);
     color: white;
     font-family: Arial, sans-serif;
 }
 
 /* Navigation Bar styles */
 nav {
-    background-color: rgb(48, 55, 76);
+    background-color: rgb(17, 25, 52);
     color: white;
     padding: 1rem;
     display: flex;
@@ -72,4 +72,34 @@ header {
 .cta-button:hover {
     background-color: #007000;
 }
+
+/* fluid*/
+canvas{
+    background:rgb(0, 0, 0);
+    height:100vh;
+    width:100vw;
+}
+
+#renderSurface {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold;
+    text-align: center;
+} 
+
+.overlay{
+    border:0px solid #fff;
+    color: #fff;
+    padding:4px;
+    position:absolute;
+    /* Center the .overlay both horizontally and vertically */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 

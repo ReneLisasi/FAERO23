@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav>
@@ -19,20 +21,22 @@
     </nav>
 
     <!-- Header Section -->
-    <header>
-        <div class="hero">
-            <h1>faero.ai</h1>
-            <p>Our services and site are still under development</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-        <div class="animated-ball"></div>
+    <header style="padding-top: 120px;">
 
-        <!-- Animated Sphere Code -->
-        <div class="container">
-            <div class="sphere">
-                <div class="liquid"></div>
+
+        <!--fluid-->
+        <canvas id="renderSurface"style="background-color: transparent;"></canvas>
+        <div id="overlay" class="overlay">
+            <div class="hero">
+                <h1>faero.ai</h1>
+                <p>Our services and site are still under development</p>
+                <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </div>
+        <script src="jquery.min.js"></script>
+        <script src="fluid.min.js"></script>
+        <script src="app.js"></script>
+        <!--end fluid-->
     </header>
 
     <!-- Features Section -->
@@ -57,5 +61,10 @@
     <footer>
         <!-- Add footer content here -->
     </footer>
+
+    <!--fluid-->
 </body>
+
 </html>
+
+<!-- rgb(48, 55, 76); -->
