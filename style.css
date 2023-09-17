@@ -8,7 +8,7 @@
 body {
     background-color: rgb(26, 39, 80);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "century gothic", sans-serif
 }
 
 /* Navigation Bar styles */
@@ -40,6 +40,18 @@ header {
     text-align: center;
     padding: 4rem;
     position: relative;
+}
+
+/* Logo style */
+.logo {
+    display: flex; /* Use flex for logo alignment */
+    align-items: center; /* Vertically align items in the middle */
+    text-align:left;
+}
+
+.logo img {
+    width: 6%; /* Adjust the image width as needed */
+    margin-right: 0.5rem; /* Add margin for spacing */
 }
 
 .hero {
@@ -76,8 +88,8 @@ header {
 /* fluid*/
 canvas{
     background:rgb(0, 0, 0);
-    height:100vh;
-    width:100vw;
+    height:300vh;
+    width:98.8vw;
 }
 
 #renderSurface {
@@ -102,4 +114,46 @@ canvas{
     transform: translate(-50%, -50%);
 }
 
+/* Center the Solutions section both horizontally and vertically */
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100vh; /* Adjust as needed */
+    padding-left: 20%; /* Adjust the padding value as needed */
+}
 
+/* Style each solution */
+.solution {
+    margin-bottom: 2rem; /* Adjust spacing between solutions as needed */
+}
+
+.solution-image {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+/* Add left padding without centering */
+.left-padding {
+    padding-left: 20px; /* Adjust the padding value as needed */
+}
+
+/*avatar*/
+/* CSS for the photo card */
+.photo-card {
+    background-color: white;
+    border-radius: 10px; /* Adjust border radius to make it more or less round */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for the card effect */
+    text-align: center; /* Center the image horizontally */
+}
+
+/* CSS to make the image circular */
+.circular-image {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally within the card */
+    align-items:start;
+}
